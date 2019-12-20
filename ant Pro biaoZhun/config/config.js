@@ -116,6 +116,105 @@ export default {
               icon: 'crown',
               component: './Order'
             },
+            // ../layouts/SecurityLayout代表下一层
+            {
+              path: '/content',
+              name: 'content',
+              icon: 'crown',
+              component: '../layouts/SecurityLayout',
+              routes: [
+                //商品中心
+                {
+                  path: '/content/Commoditycenter',
+                  name: 'Commoditycenter',
+                  icon: 'crown',
+                  component: './content/Commoditycenter'
+                },
+                //访问记录
+                {
+                  path: '/content/Access',
+                  name: 'Access',
+                  icon: 'crown',
+                  component: './content/Access'
+                },
+                //设置分类
+                {
+                  path: '/content/Setclassification',
+                  name: 'Setclassification',
+                  icon: 'crown',
+                  component: './content/Setclassification'
+                },
+              //  合作商家
+                {
+                  path: '/content/Cooperativebusiness',
+                  name: 'Cooperativebusiness',
+                  icon: 'crown',
+                  component: './content/Cooperativebusiness'
+                },
+              //  幻灯片
+                {
+                  path: '/content/Slide',
+                  name: 'Slide',
+                  icon: 'crown',
+                  component: './content/Slide'
+                },
+              ],
+            },
+
+            //用户
+
+            {
+              path: '/Usermember',
+              name: 'Usermember',
+              icon: 'crown',
+              component: '../layouts/SecurityLayout',
+              routes: [
+                //会员管理
+                {
+                  path: '/Usermember/Administratorman',
+                  name: 'Administratorman',
+                  icon: 'crown',
+                  component: './Usermember/Administratorman',
+                },
+
+                //管理员管理
+                {
+                  path: '/Usermember/Memberman',
+                  name: 'Memberman',
+                  icon: 'crown',
+                  component: './Usermember/Memberman',
+                },
+              ],
+            },
+
+
+            //个人信息
+
+            {
+              path: '/Personalinfo',
+              name: 'Personalinfo',
+              icon: 'crown',
+              component: '../layouts/SecurityLayout',
+              routes: [
+                //修改密码
+                {
+                  path: '/Personalinfo/Modifypass',
+                  name: 'Modifypass',
+                  icon: 'crown',
+                  component: './Personalinfo/Modifypass',
+                },
+
+                //修改个人信息
+                {
+                  path: '/Personalinfo/Modifyperinfo',
+                  name: 'Modifyperinfo',
+                  icon: 'crown',
+                  component: './Personalinfo/Modifyperinfo',
+                },
+              ],
+            },
+
+
             {
               component: './404',
             },
