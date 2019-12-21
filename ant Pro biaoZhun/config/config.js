@@ -214,6 +214,76 @@ export default {
               ],
             },
 
+            //俊章写的
+            {
+              path: '/ShoppingMall',
+              name: 'ShoppingMall',
+              component: '../layouts/SecurityLayout',
+              routes: [
+                {
+                  path: '/ShoppingMall/allOrder',
+                  name: 'allOrder',
+                  component: './ShoppingMall/allOrder/allOrder',
+                },
+                {
+                  path: '/ShoppingMall/AccountChange',
+                  name: 'AccountChange',
+                  component: './ShoppingMall/accountChange/AccountChange',
+                },
+                {
+                  path: '/ShoppingMall/drawing',
+                  name: 'drawing',
+                  component: './ShoppingMall/drawing/drawing',
+                },
+                {
+                  path: '/ShoppingMall/stock',
+                  name: 'stock',
+                  component: './ShoppingMall/stock/stock',
+                },
+                {
+                  path: '/ShoppingMall/salesList',
+                  name: 'salesList',
+                  component: './ShoppingMall/salesList/salesList',
+                },
+                {
+                  path: '/ShoppingMall/courierNumber',
+                  name: 'courierNumber',
+                  component: './ShoppingMall/courierNumber/courierNumber',
+                },
+                {
+                  path: '/ShoppingMall/rechargeRecord',
+                  name: 'rechargeRecord',
+                  component: './ShoppingMall/rechargeRecord/rechargeRecord',
+                },
+                {
+                  path: '/ShoppingMall/agent',
+                  name: 'agent',
+                  component: './ShoppingMall/agent/agent',
+                },
+              ],
+            },
+            {
+              path: '/systemConfiguration',
+              name: 'systemConfiguration',
+              component: '../layouts/SecurityLayout',
+              routes: [
+                {
+                  path: '/systemConfiguration/distribution',
+                  name: 'distribution',
+                  component: './systemConfiguration/distribution/distribution',
+                },
+                {
+                  path: '/systemConfiguration/weChat',
+                  name: 'weChat',
+                  component: './systemConfiguration/weChat/weChat',
+                },
+                {
+                  path: '/systemConfiguration/platform',
+                  name: 'platform',
+                  component: './systemConfiguration/platform/platform',
+                },
+              ],
+            },
 
             {
               component: './404',
