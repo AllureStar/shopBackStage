@@ -4,8 +4,7 @@ import { getData, delOne } from '@/services/order';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const OrderModel = {
   namespace: 'order',
-  state: [
-  ],
+  state: [],
 
   effects: {
     *getData(_, { call, put }) {
@@ -18,26 +17,24 @@ const OrderModel = {
       });
     },
     *delOne(param, { call, put }) {
-      const response = yield call(delOne,param.payload);
+      const response = yield call(delOne, param.payload);
       // eslint-disable-next-line no-console
-      console.log("这是",response.data);
+      console.log('这是', response.data);
       yield put({
         type: 'delOneReduce',
         payload: response.data,
       });
     },
-
   },
 
   reducers: {
     getDataReduce(state, action) {
       return action.payload;
     },
-    delOneReduce(_, action){
-      return action.payload
-    }
-
+    delOneReduce(_, action) {
+      return action.payload;
+    },
   },
 };
 
-export default  OrderModel;
+export default OrderModel;

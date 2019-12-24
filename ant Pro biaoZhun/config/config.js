@@ -114,7 +114,7 @@ export default {
               path: '/order',
               name: 'order',
               icon: 'crown',
-              component: './Order'
+              component: './Order',
             },
             // ../layouts/SecurityLayout代表下一层
             {
@@ -128,35 +128,35 @@ export default {
                   path: '/content/Commoditycenter',
                   name: 'Commoditycenter',
                   icon: 'crown',
-                  component: './content/Commoditycenter'
+                  component: './content/Commoditycenter',
                 },
                 //访问记录
                 {
                   path: '/content/Access',
                   name: 'Access',
                   icon: 'crown',
-                  component: './content/Access'
+                  component: './content/Access',
                 },
                 //设置分类
                 {
                   path: '/content/Setclassification',
                   name: 'Setclassification',
                   icon: 'crown',
-                  component: './content/Setclassification'
+                  component: './content/Setclassification',
                 },
-              //  合作商家
+                //  合作商家
                 {
                   path: '/content/Cooperativebusiness',
                   name: 'Cooperativebusiness',
                   icon: 'crown',
-                  component: './content/Cooperativebusiness'
+                  component: './content/Cooperativebusiness',
                 },
-              //  幻灯片
+                //  幻灯片
                 {
                   path: '/content/Slide',
                   name: 'Slide',
                   icon: 'crown',
-                  component: './content/Slide'
+                  component: './content/Slide',
                 },
               ],
             },
@@ -186,7 +186,6 @@ export default {
                 },
               ],
             },
-
 
             //个人信息
 
@@ -218,6 +217,7 @@ export default {
             {
               path: '/ShoppingMall',
               name: 'ShoppingMall',
+              icon: 'crown',
               component: '../layouts/SecurityLayout',
               routes: [
                 {
@@ -265,6 +265,7 @@ export default {
             {
               path: '/systemConfiguration',
               name: 'systemConfiguration',
+              icon: 'crown',
               component: '../layouts/SecurityLayout',
               routes: [
                 {
@@ -317,6 +318,7 @@ export default {
     getLocalIdent: (context, _, localName) => {
       if (
         context.resourcePath.includes('node_modules') ||
+        context.resourcePath.includes('.css') ||
         context.resourcePath.includes('ant.design.pro.less') ||
         context.resourcePath.includes('global.less')
       ) {
