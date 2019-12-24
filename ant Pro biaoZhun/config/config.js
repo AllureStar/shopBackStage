@@ -127,35 +127,35 @@ export default {
                 {
                   path: '/content/Commoditycenter',
                   name: 'Commoditycenter',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './content/Commoditycenter'
                 },
                 //访问记录
                 {
                   path: '/content/Access',
                   name: 'Access',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './content/Access'
                 },
                 //设置分类
                 {
                   path: '/content/Setclassification',
                   name: 'Setclassification',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './content/Setclassification'
                 },
               //  合作商家
                 {
                   path: '/content/Cooperativebusiness',
                   name: 'Cooperativebusiness',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './content/Cooperativebusiness'
                 },
               //  幻灯片
                 {
                   path: '/content/Slide',
                   name: 'Slide',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './content/Slide'
                 },
               ],
@@ -173,7 +173,7 @@ export default {
                 {
                   path: '/Usermember/Administratorman',
                   name: 'Administratorman',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './Usermember/Administratorman',
                 },
 
@@ -181,7 +181,7 @@ export default {
                 {
                   path: '/Usermember/Memberman',
                   name: 'Memberman',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './Usermember/Memberman',
                 },
               ],
@@ -200,7 +200,7 @@ export default {
                 {
                   path: '/Personalinfo/Modifypass',
                   name: 'Modifypass',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './Personalinfo/Modifypass',
                 },
 
@@ -208,7 +208,7 @@ export default {
                 {
                   path: '/Personalinfo/Modifyperinfo',
                   name: 'Modifyperinfo',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './Personalinfo/Modifyperinfo',
                 },
               ],
@@ -218,46 +218,55 @@ export default {
             {
               path: '/ShoppingMall',
               name: 'ShoppingMall',
+              icon: 'crown',
               component: '../layouts/SecurityLayout',
               routes: [
                 {
                   path: '/ShoppingMall/allOrder',
                   name: 'allOrder',
+                  // icon: 'crown',
                   component: './ShoppingMall/allOrder/allOrder',
                 },
                 {
                   path: '/ShoppingMall/AccountChange',
                   name: 'AccountChange',
+                  // icon: 'crown',
                   component: './ShoppingMall/accountChange/AccountChange',
                 },
                 {
                   path: '/ShoppingMall/drawing',
                   name: 'drawing',
+                  // icon: 'crown',
                   component: './ShoppingMall/drawing/drawing',
                 },
                 {
                   path: '/ShoppingMall/stock',
                   name: 'stock',
+                  // icon: 'crown',
                   component: './ShoppingMall/stock/stock',
                 },
                 {
                   path: '/ShoppingMall/salesList',
                   name: 'salesList',
+                  // icon: 'crown',
                   component: './ShoppingMall/salesList/salesList',
                 },
                 {
                   path: '/ShoppingMall/courierNumber',
                   name: 'courierNumber',
+                  // icon: 'crown',
                   component: './ShoppingMall/courierNumber/courierNumber',
                 },
                 {
                   path: '/ShoppingMall/rechargeRecord',
                   name: 'rechargeRecord',
+                  // icon: 'crown',
                   component: './ShoppingMall/rechargeRecord/rechargeRecord',
                 },
                 {
                   path: '/ShoppingMall/agent',
                   name: 'agent',
+                  // icon: 'crown',
                   component: './ShoppingMall/agent/agent',
                 },
               ],
@@ -265,21 +274,25 @@ export default {
             {
               path: '/systemConfiguration',
               name: 'systemConfiguration',
+              icon: 'crown',
               component: '../layouts/SecurityLayout',
               routes: [
                 {
                   path: '/systemConfiguration/distribution',
                   name: 'distribution',
+                  // icon: 'crown',
                   component: './systemConfiguration/distribution/distribution',
                 },
                 {
                   path: '/systemConfiguration/weChat',
                   name: 'weChat',
+                  // icon: 'crown',
                   component: './systemConfiguration/weChat/weChat',
                 },
                 {
                   path: '/systemConfiguration/platform',
                   name: 'platform',
+                  // icon: 'crown',
                   component: './systemConfiguration/platform/platform',
                 },
               ],
@@ -318,7 +331,8 @@ export default {
       if (
         context.resourcePath.includes('node_modules') ||
         context.resourcePath.includes('ant.design.pro.less') ||
-        context.resourcePath.includes('global.less')
+        context.resourcePath.includes('global.less')||
+        context.resourcePath.includes('.css')
       ) {
         return localName;
       }
