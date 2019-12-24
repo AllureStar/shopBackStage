@@ -173,7 +173,7 @@ export default {
                 {
                   path: '/Usermember/Administratorman',
                   name: 'Administratorman',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './Usermember/Administratorman',
                 },
 
@@ -181,7 +181,7 @@ export default {
                 {
                   path: '/Usermember/Memberman',
                   name: 'Memberman',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './Usermember/Memberman',
                 },
               ],
@@ -199,7 +199,7 @@ export default {
                 {
                   path: '/Personalinfo/Modifypass',
                   name: 'Modifypass',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './Personalinfo/Modifypass',
                 },
 
@@ -207,7 +207,7 @@ export default {
                 {
                   path: '/Personalinfo/Modifyperinfo',
                   name: 'Modifyperinfo',
-                  icon: 'crown',
+                  // icon: 'crown',
                   component: './Personalinfo/Modifyperinfo',
                 },
               ],
@@ -223,41 +223,49 @@ export default {
                 {
                   path: '/ShoppingMall/allOrder',
                   name: 'allOrder',
+                  // icon: 'crown',
                   component: './ShoppingMall/allOrder/allOrder',
                 },
                 {
                   path: '/ShoppingMall/AccountChange',
                   name: 'AccountChange',
+                  // icon: 'crown',
                   component: './ShoppingMall/accountChange/AccountChange',
                 },
                 {
                   path: '/ShoppingMall/drawing',
                   name: 'drawing',
+                  // icon: 'crown',
                   component: './ShoppingMall/drawing/drawing',
                 },
                 {
                   path: '/ShoppingMall/stock',
                   name: 'stock',
+                  // icon: 'crown',
                   component: './ShoppingMall/stock/stock',
                 },
                 {
                   path: '/ShoppingMall/salesList',
                   name: 'salesList',
+                  // icon: 'crown',
                   component: './ShoppingMall/salesList/salesList',
                 },
                 {
                   path: '/ShoppingMall/courierNumber',
                   name: 'courierNumber',
+                  // icon: 'crown',
                   component: './ShoppingMall/courierNumber/courierNumber',
                 },
                 {
                   path: '/ShoppingMall/rechargeRecord',
                   name: 'rechargeRecord',
+                  // icon: 'crown',
                   component: './ShoppingMall/rechargeRecord/rechargeRecord',
                 },
                 {
                   path: '/ShoppingMall/agent',
                   name: 'agent',
+                  // icon: 'crown',
                   component: './ShoppingMall/agent/agent',
                 },
               ],
@@ -271,16 +279,19 @@ export default {
                 {
                   path: '/systemConfiguration/distribution',
                   name: 'distribution',
+                  // icon: 'crown',
                   component: './systemConfiguration/distribution/distribution',
                 },
                 {
                   path: '/systemConfiguration/weChat',
                   name: 'weChat',
+                  // icon: 'crown',
                   component: './systemConfiguration/weChat/weChat',
                 },
                 {
                   path: '/systemConfiguration/platform',
                   name: 'platform',
+                  // icon: 'crown',
                   component: './systemConfiguration/platform/platform',
                 },
               ],
@@ -320,7 +331,8 @@ export default {
         context.resourcePath.includes('node_modules') ||
         context.resourcePath.includes('.css') ||
         context.resourcePath.includes('ant.design.pro.less') ||
-        context.resourcePath.includes('global.less')
+        context.resourcePath.includes('global.less') ||
+        context.resourcePath.includes('.css')
       ) {
         return localName;
       }
