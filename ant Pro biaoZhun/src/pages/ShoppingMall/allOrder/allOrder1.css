@@ -1,20 +1,20 @@
- .ant-input {
+.AllOrder .ant-input {
   width: 200px;
 }
- .ant-calendar-picker-input{
+.AllOrder .ant-calendar-picker-input{
    margin: 10px 0;
  }
-p{
+.AllOrder p{
   padding: 0;
   margin: 0;
 }
-.ant-table-thead>tr>th,.ant-table-thead>tr>td{
+.AllOrder .ant-table-thead>tr>th,.ant-table-thead>tr>td{
   padding: 16px 16px;
   width:24%;
 }
- .ant-table-thead>tr>th,.ant-table-thead>tr>td:nth-of-type(1){
+.AllOrder .ant-table-thead>tr>th,.ant-table-thead>tr>td:nth-of-type(1){
    width: 0;
  }
- .ant-table-tbody>tr>td>div>span{
+.AllOrder .ant-table-tbody>tr>td>div>span{
    margin: 0 10px 10px 0;
  }

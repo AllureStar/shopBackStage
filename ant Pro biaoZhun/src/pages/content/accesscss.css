@@ -1,68 +1,65 @@
-.ant-table-tbody > tr > td:nth-of-type(1){
+.bodyss .ant-table-tbody > tr > td:nth-of-type(1){
   /*width: 120px;*/
   height: 100px;
   /*background-color: red;*/
 }
 
-.ant-table-tbody > tr > td:nth-of-type(2){
-  width: 40px;
+.bodyss  .ant-table-tbody > tr > td:nth-of-type(2){
+  width: 248px;
   /*height: 100px;*/
   /*background-color: yellow;*/
+  padding-left: 190px;
 }
-.ant-table-tbody > tr > td:nth-of-type(3){
-  width: 100px;
+.bodyss .ant-table-tbody > tr > td:nth-of-type(3){
+  width: 248px;
   height: 100px;
   /*background-color: aqua;*/
+  padding-left: 190px;
 }
-.ant-table-tbody > tr > td:nth-of-type(4){
-  width: 325px;
-  height: 100px;
-  /*background-color: orange;*/
-  padding-left: 160px;
-}
-.ant-table-thead > tr >th:nth-child(4){
-  padding-left: 10rem;
-}
-.ant-table-thead > tr >th:nth-child(5){
-  padding-left: 175px;
-}
-.ant-table-tbody > tr > td:nth-of-type(5){
-  width: 525px;
-  height: 100px;
-  /*background-color: deeppink;*/
-  padding-left: 175px;
-}
-
-.ant-table-tbody > tr > td:nth-of-type(6){
-  width: 125px;
+.bodyss .ant-table-tbody > tr > td:nth-of-type(4){
+  width: 248px;
   height: 100px;
   /*background-color: orange;*/
   /*padding-left: 160px;*/
+  padding-left: 100px;
 }
-.ant-table-thead > tr >th:nth-child(6){
-  /*padding-left: 10rem;*/
-}
-.ant-table-tbody > tr > td:nth-of-type(7){
-  width: 325px;
-  height: 100px;
-  /*background-color: deeppink;*/
-  padding-left: 160px;
-}
-.ant-table-thead > tr >th:nth-child(7){
-  padding-left: 10rem;
-}
-.ant-input:nth-of-type(1){
-  /*width: 40px;*/
-}
-.ant-table-thead tr th:nth-of-type(1){
+
+
+
+
+/*nav导航条*/
+.bodyss .ant-table-thead tr th:nth-of-type(1){
   width: 50px;
   text-align: center;
   /*background-color: pink;*/
 }
-.ant-table-row  td:nth-of-type(1){
+.bodyss .ant-table-row  td:nth-of-type(1){
   text-align: center;
 }
-.ant-table-thead tr th:nth-of-type(2){
+.bodyss .ant-table-thead tr th:nth-of-type(2){
   width: 50px;
   /*background-color: orange;*/
+  padding-left: 190px;
 }
+.bodyss .ant-table-thead tr th:nth-of-type(3){
+  padding-left: 190px;
+  /*background-color: greenyellow;*/
+}
+.bodyss .ant-table-thead tr th:nth-of-type(4){
+  padding-left: 100px;
+  /*background-color: salmon;*/
+}
+.bodyss .antd-pro-pages-content-access-leiXType > .ant-input{
+  width: 110px;
+}
+.bodyss .ant-calendar-picker-input{
+  margin: 0 0;
+}
+
+
+/*nav加粗*/
+.bodyss .ant-table-thead tr th{
+  font-weight: 800;
+}
+
+

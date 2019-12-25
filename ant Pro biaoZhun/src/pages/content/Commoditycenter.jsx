@@ -281,7 +281,7 @@ export default class Commoditycenter extends React.Component {
   render() {
     // eslint-disable-next-line react/react-in-jsx-scope,no-undef
     return (
-      <div className={style.bodys}>
+      <div className={style.commods}>
         {/*添加内容   审核通过   搜索的按钮布局*/}
         <div className={style.operation}>
           <div className={style.addContent}>
