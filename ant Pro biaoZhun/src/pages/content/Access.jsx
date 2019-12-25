@@ -30,25 +30,61 @@ const columns = [
     dataIndex: 'jigouStyle',
     render: text => (
       <div>
-        <div>{text.aaa}</div>
-        <div>{text.institutions}</div>
+        <div>
+          <span style={{ fontWeight: '800' }}>机构:&nbsp;&nbsp;</span>
+          {text.institutions}
+        </div>
+        <div>
+          <span style={{ fontWeight: '800' }}>类型:&nbsp;&nbsp;</span>
+          {text.style1}
+        </div>
+        <div>
+          <span style={{ fontWeight: '800' }}>userid:&nbsp;&nbsp;</span>
+          {text.userid}
+        </div>
       </div>
     ),
   },
   {
-    key: 'address',
+    key: 'xinxi',
     title: '账号/昵称/手机',
-    dataIndex: 'address',
+    dataIndex: 'xinxi',
+    render: text => (
+      <div>
+        <div>
+          <span style={{ fontWeight: '800' }}>账号:&nbsp;&nbsp;</span>
+          {text.accountNumber}
+        </div>
+        <div>
+          <span style={{ fontWeight: '800' }}>昵称:&nbsp;&nbsp;</span>
+          {text.nikeName}
+        </div>
+        <div>
+          <span style={{ fontWeight: '800' }}>手机:&nbsp;&nbsp;</span>
+          {text.phone}
+        </div>
+      </div>
+    ),
   },
   {
-    key: '1',
-    title: '标题/内容/时间',
-    render: (text, record) => (
-      <span>
-        <a>Invite {record.name}</a>
-        <Divider type="vertical" />
-        <a>Delete</a>
-      </span>
+    key: 'title',
+    title: '标题/内容/事件',
+    dataIndex: 'title',
+    render: text => (
+      <div>
+        <div>
+          <span style={{ fontWeight: '800' }}>标题:&nbsp;&nbsp;</span>
+          {text.tit}
+        </div>
+        <div>
+          <span style={{ fontWeight: '800' }}>内容:&nbsp;&nbsp;</span>
+          {text.cont}
+        </div>
+        <div>
+          <span style={{ fontWeight: '800' }}>时间:&nbsp;&nbsp;</span>
+          {text.time}
+        </div>
+      </div>
     ),
   },
 ];
@@ -56,38 +92,122 @@ const columns = [
 const data = [
   {
     key: '1',
-    id: '5464017',
+    id: '5464013',
     age: 32,
-    address: 'New York No. 1 Lake Park',
+    xinxi: {
+      accountNumber: '912317650',
+      nikeName: '薛佳兴',
+      phone: '17603236137',
+    },
     jigouStyle: {
-      aaa: 'asdasd',
-      institutions: '优品严选(427)',
+      institutions: '优品严选(425 )',
       style1: '会员中心',
-      userid: '2804802',
+      userid: '2804800',
+    },
+    title: {
+      tit: '活动列表',
+      cont: '活动列表',
+      time: '2019-12-25 06:20:02',
     },
   },
   {
     key: '2',
-    id: '5464017',
+    id: '5464014',
     age: 32,
-    address: 'New York No. 1 Lake Park',
+    xinxi: {
+      accountNumber: '912317650',
+      nikeName: '薛佳兴',
+      phone: '17603236137',
+    },
     jigouStyle: {
-      aaa: 'asdasd',
-      institutions: '优品严选(427)',
+      institutions: '优品严选(425 )',
       style1: '会员中心',
-      userid: '2804802',
+      userid: '2804800',
+    },
+    title: {
+      tit: '人脉二维码列表',
+      cont: '汇聚人脉资源，广结善缘，合作共赢',
+      time: '2019-12-25 06:20:02',
     },
   },
   {
     key: '3',
+    id: '5464015',
+    age: 32,
+    xinxi: {
+      accountNumber: '912317650',
+      nikeName: '薛佳兴',
+      phone: '17603236137',
+    },
+    jigouStyle: {
+      institutions: '优品严选(425 )',
+      style1: '会员中心',
+      userid: '2804800',
+    },
+    title: {
+      tit: '二*级*分销功能体验',
+      cont: '体验商城系统分销功能',
+      time: '2019-12-25 06:20:02',
+    },
+  },
+  {
+    key: '4',
+    id: '5464016',
+    age: 32,
+    xinxi: {
+      accountNumber: '912317650',
+      nikeName: '薛佳兴',
+      phone: '17603236137',
+    },
+    jigouStyle: {
+      institutions: '优品严选(425 )',
+      style1: '会员中心',
+      userid: '2804800',
+    },
+    title: {
+      tit: '二*级*分销功能体验',
+      cont: '体验商城系统分销功能',
+      time: '2019-12-25 06:20:02',
+    },
+  },
+  {
+    key: '5',
     id: '5464017',
     age: 32,
-    address: 'New York No. 1 Lake Park',
+    xinxi: {
+      accountNumber: '912317650',
+      nikeName: '薛佳兴',
+      phone: '17603236137',
+    },
     jigouStyle: {
-      aaa: 'asdasd',
-      institutions: '优品严选(427)',
+      institutions: '优品严选(425 )',
       style1: '会员中心',
-      userid: '2804802',
+      userid: '2804800',
+    },
+    title: {
+      tit: '二*级*分销功能体验',
+      cont: '体验商城系统分销功能',
+      time: '2019-12-25 06:20:02',
+    },
+  },
+  {
+    key: '6',
+    id: '5464018',
+    age: 32,
+    xinxi: {
+      accountNumber: '912317650',
+      nikeName: '薛佳兴',
+      phone: '17603236137',
+    },
+    jigouStyle: {
+      institutions: '优品严选(425 )',
+      style1: '会员中心',
+      userid: '2804800',
+    },
+    title: {
+      tit: '二*级*分销功能体验',
+      cont: '体验商城系统分销功能',
+      time: '2019-12-25 06:20:02',
     },
   },
 ];
@@ -99,7 +219,8 @@ export default class Access extends React.Component {
   render() {
     // eslint-disable-next-line react/react-in-jsx-scope,no-undef
     return (
-      <div className={style.bodys}>
+      //绑定另外一个class名
+      <div className={style.bodys + ' bodyss'}>
         {/* 添加时间  日期等输入框 */}
         <div className={style.addTiime}>
           <div className={style.timeJia}>添加时间 :</div>
