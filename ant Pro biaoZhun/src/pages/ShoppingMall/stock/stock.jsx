@@ -1,5 +1,5 @@
 // 库存报表
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './stock.less';
 import { DatePicker, Input, Button, Table } from 'antd';
 import MySelect from '@/components/guojunzhang/MySelect';
@@ -20,11 +20,12 @@ export default class Stock extends React.Component {
       number: '',
       Alipay: '',
       phone: '',
+      isLoading: false,
     };
   }
   render() {
     return (
-      <div className={styles.Stock}>
+      <div className={styles.Stock + ' shoppingMall'}>
         <div className={styles.AllOrderTop}>
           <RangePicker
             className={styles.AllOrderTime}

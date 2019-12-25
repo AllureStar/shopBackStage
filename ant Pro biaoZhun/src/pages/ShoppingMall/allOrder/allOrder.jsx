@@ -111,7 +111,7 @@ export default class AllOrder extends React.Component {
   }
   render() {
     return (
-      <div className={styles.AllOrder}>
+      <div className={styles.AllOrder + ' shoppingMall'}>
         {/*搜索框*/}
         <div className={styles.AllOrderTop}>
           <RangePicker

@@ -89,7 +89,7 @@ export default class AccountChange extends React.Component {
   }
   render() {
     return (
-      <div className={styles.AccountChange}>
+      <div className={styles.AccountChange + ' shoppingMall'}>
         <div className={styles.AllOrderTop}>
           <RangePicker
             className={styles.AllOrderTime}

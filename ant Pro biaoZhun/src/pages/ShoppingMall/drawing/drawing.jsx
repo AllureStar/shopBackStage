@@ -121,7 +121,7 @@ export default class Drawing extends React.Component {
   }
   render() {
     return (
-      <div className={styles.Drawing}>
+      <div className={styles.Drawing + ' shoppingMall'}>
         <div className={styles.AllOrderTop}>
           <RangePicker
             className={styles.AllOrderTime}
