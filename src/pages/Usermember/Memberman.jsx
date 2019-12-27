@@ -1,0 +1,9 @@
+import React from "react";
+export default class Memberman extends React.Component{
+  render() {
+    // eslint-disable-next-line react/react-in-jsx-scope,no-undef
+    return (
+      <div>管理员管理</div>
+    );
+  }
+}
